@@ -23,7 +23,7 @@ extension UserSignInView {
 
         var body: some View {
             DisclosureGroup {
-                SecureField(L10n.password, text: $password)
+                RevealableSecureField(title: L10n.password, text: $password)
                 Button {
                     Task {
                         guard let username = publicUser.name else { return }

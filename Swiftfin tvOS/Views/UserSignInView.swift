@@ -44,7 +44,7 @@ struct UserSignInView: View {
                     .autocapitalization(.none)
                     .focused($focusedField, equals: .username)
 
-                SecureField(L10n.password, text: $password)
+                RevealableSecureField(title: L10n.password, text: $password)
                     .disableAutocorrection(true)
                     .autocapitalization(.none)
                     .focused($focusedField, equals: .password)

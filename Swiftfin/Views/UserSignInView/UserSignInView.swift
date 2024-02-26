@@ -35,7 +35,7 @@ struct UserSignInView: View {
                 .disableAutocorrection(true)
                 .autocapitalization(.none)
 
-            SecureField(L10n.password, text: $password)
+            RevealableSecureField(title: L10n.password, text: $password)
                 .disableAutocorrection(true)
                 .autocapitalization(.none)
 
